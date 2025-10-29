@@ -2,10 +2,7 @@ workflows:
   build_apk:
     name: Build Android APK
     max_build_duration: 60
-    instance_type: mac_mini_m1  # یا linux_x2 برای محیط لینوکس
-    environment:
-      vars:
-        JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+    instance_type: linux_x2
     scripts:
       - name: Clean project
         script: |
